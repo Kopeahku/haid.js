@@ -7,7 +7,7 @@ body {
   margin-top: 20px;
 }
 .custom-header {
-  background-color: #e91e63;
+  background-color: #c70f0f;
   color: #ffffff;
   padding: 20px 0;
   margin-bottom: 30px; /* Menambahkan margin-bottom */
@@ -19,14 +19,14 @@ body {
 }
 
 .haid-date {
-  background-color: #f8d7da;
+  background-color: #ff0017;
 }
 
 .masa-subur {
-  background-color: #c3e6cb;
+  background-color: #01ff3b;
 }
 #hitungBtn {
-  background-color: #e91e63;
+  background-color: #c70f0f;
   color: #ffffff;
 }
 
