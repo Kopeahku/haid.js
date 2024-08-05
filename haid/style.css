@@ -1,0 +1,62 @@
+body {
+  background-color: #f8f9fa;
+  padding-top: 20px;
+}
+
+#calendar {
+  margin-top: 20px;
+}
+.custom-header {
+  background-color: #e91e63;
+  color: #ffffff;
+  padding: 20px 0;
+  margin-bottom: 30px; /* Menambahkan margin-bottom */
+}
+
+.site-title {
+  font-size: 24px;
+  margin: 0;
+}
+
+.haid-date {
+  background-color: #f8d7da;
+}
+
+.masa-subur {
+  background-color: #c3e6cb;
+}
+#hitungBtn {
+  background-color: #e91e63;
+  color: #ffffff;
+}
+
+#hitungBtn:hover,
+#hitungBtn:focus {
+  background-color: #c2185b;
+  color: #ffffff;
+}
+.table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+.table td,
+.table th {
+  text-align: center;
+  vertical-align: middle;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Responsive styles */
+@media (max-width: 767px) {
+  .table td,
+  .table th {
+    padding: 0.25rem;
+    font-size: 12px;
+  }
+  #hitungBtn {
+    margin-bottom:20px;
+  }
+}
+
