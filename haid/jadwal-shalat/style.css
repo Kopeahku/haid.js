@@ -17,7 +17,7 @@ body, html {
 }
 
 h1 {
-    color: #ffe500;
+    color: #41621b;
     text-align: center;
 }
 
@@ -62,6 +62,6 @@ tbody tr:nth-child(even) {
 /* Styling untuk baris hari ini */
 .today {
     background-color: #ffc9c9;
-    color: #bfad10;
+    color: #0e2ddb;
     font-weight: bold;
 }
