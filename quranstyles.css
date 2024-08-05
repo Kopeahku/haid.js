@@ -1,0 +1,73 @@
+/* styles.css */
+
+
+body {
+    background: #ffc107;
+    color: #000000;
+    font-family: "LPMQ Isep Misbah";
+    font-size: 18px;
+}
+.header, #surahList div {
+    cursor: pointer;
+}
+#surahList div:hover {
+    background-color: #e9ecef;
+}
+
+#navigation {
+    margin-bottom: 20px;
+}
+
+.ayah {
+    margin-top: 20px;
+    padding: 10px;
+    background: #fff;
+    border-left: 5px solid #197a1d;
+}
+
+.arabic {
+    text-align: right;
+    font-family: "LPMQ Isep Misbah";
+    font-size: 1.5em;
+    line-height: 1.8em;
+    direction: rtl;  /* Right-to-left direction for Arabic text */
+}
+
+.translation {
+    text-align: left;
+    margin-top: 10px;
+}
+
+audio {
+    width: 100%;
+    margin-top: 10px;
+}
+
+#qariSelector {
+    margin-top: 20px;
+}
+
+select.form-control {
+    width: auto;
+    display: inline-block;
+}
+.audio-src {
+    font-size: 0.8em;
+    color: #666;
+    margin-top: 10px;
+}
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f8f9fa;
+    line-height: 3.5;
+}
+
+.container label, .container select {
+    vertical-align: middle;
+}
+select:disabled {
+    color: #ccc; /* Gray out the text */
+    background-color: #eee; /* Lighter background for disabled state */
+}
