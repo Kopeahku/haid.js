@@ -21,7 +21,7 @@ header {
 }
 
 header h1 {
-    color: #FF1493;
+    color: #ffe500;
     font-weight: normal;
 }
 
@@ -61,19 +61,19 @@ select, button {
     padding: 10px;
     margin-top: 10px;
     border-radius: 5px;
-    border: 1px solid #FFC0CB;
+    border: 1px solid #ffe500;
     cursor: pointer;
-    background-color: #FFF0F5;
-    color: #FF1493;
+    background-color: #29ad2e;
+    color: #ffe500;
 }
 
 button {
     background-color: #29ad2e;
-    color: white;
+    color: black;
 }
 
 button:hover {
-    background-color: #FF1493;
+    background-color: #ffe500;
 }
 .font-size-controls {
     position: fixed;
@@ -98,7 +98,7 @@ button:hover {
 }
 
 .font-size-controls button:hover {
-    background-color: #FF1493;
+    background-color: #ffe500;
 }
 .navbar {
     display: flex;
@@ -118,11 +118,11 @@ button:hover {
 }
 
 .navbar a:hover {
-    background-color: #FF1493;
+    background-color: #ffe500;
 }
 
 footer {
-    background-color: #FFE0F0;
+    background-color: #000000;
     color: #29ad2e;
     padding: 10px 0;
     box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
