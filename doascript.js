@@ -4,25 +4,25 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function fetchJadwalShalat(kota) {
-    const url = `https://api.aladhan.com/v1/timingsByCity?city=${kota}&amp;country=Indonesia&amp;method=11`;
+    const url = `https://api.aladhan.com/v1/timingsByCity?city=${kota}&country=Indonesia&method=11`;
     fetch(url)
-        .then(response =&gt; response.json())
-        .then(data =&gt; {
+        .then(response => response.json())
+        .then(data => {
             const times = data.data.timings;
             const jadwalText = `Jadwal Shalat Hari Ini Daerah Jakarta ( Subuh: ${times.Fajr} | Dzhur: ${times.Dhuhr} | Ashar: ${times.Asr} | Maghrib: ${times.Maghrib} | Isya: ${times.Isha} )`;
             const runningTextContainer = document.getElementById('jadwalShalat');
             // Gunakan innerHTML untuk memasukkan jadwal ke dalam div dan wrap dengan div tambahan untuk animasi
             runningTextContainer.innerHTML = `<div>${jadwalText}</div>`;
         })
-        .catch(err =&gt; console.error('Error fetching prayer times:', err));
+        .catch(err => console.error('Error fetching prayer times:', err));
 }
 
 function fetchDoaData() {
     fetch('https://api.myquran.com/v2/doa/all')
-        .then(response =&gt; response.json())
-        .then(data =&gt; {
+        .then(response => response.json())
+        .then(data => {
             const selector = document.getElementById('doaSelector');
-            data.data.forEach((doa, index) =&gt; {
+            data.data.forEach((doa, index) => {
                 let option = document.createElement('option');
                 option.value = index;
                 option.textContent = doa.judul;
@@ -30,7 +30,7 @@ function fetchDoaData() {
             });
 
             // Tampilkan doa pertama secara default jika data doa tersedia
-            if(data.data.length &gt; 0) {
+            if(data.data.length > 0) {
                 displayDoa(data.data[0]);
             }
 
@@ -39,7 +39,7 @@ function fetchDoaData() {
                 displayDoa(selectedDoa);
             });
         })
-        .catch(err =&gt; console.error('Error fetching doa data:', err));
+        .catch(err => console.error('Error fetching doa data:', err));
 }
 
 
@@ -69,11 +69,11 @@ function changeFontSize(action) {
     }
     document.addEventListener('DOMContentLoaded', function() {
     fetch('doapilihan.json')
-        .then(response =&gt; response.json())
-        .then(data =&gt; {
+        .then(response => response.json())
+        .then(data => {
             setupMenu(data);
         })
-        .catch(error =&gt; console.log('Error loading JSON:', error));
+        .catch(error => console.log('Error loading JSON:', error));
 });
 
 }
