@@ -49,12 +49,12 @@ function displayDoa(doa) {
         <h2>${doa.judul}</h2>
         <p class="arab">${doa.arab}</p>
         <p>${doa.indo}</p>
-        <button onclick="shareDoa('${doa.judul}: ${doa.arab} - ${doa.indo}')">Share ke WhatsApp</button>
+        <button onclick="shareDoa('${doa.judul}: ${doa.arab} - ${doa.indo}')">Bagikan Doa ini</button>
     `;
 }
 
 function shareDoa(doa) {
-    const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(doa)}+https://play.google.com/store/apps/details?id=com.alquranindonesiaterlengkap`;
+    const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(doa)+https://play.google.com/store/apps/details?id=com.alquranindonesiaterlengkap}`;
     window.open(whatsappUrl, '_blank');
 }
 
