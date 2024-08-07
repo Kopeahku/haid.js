@@ -54,7 +54,7 @@ function displayDoa(doa) {
 }
 
 function shareDoa(doa) {
-    const whatsappUrl = `https://wa.me/?text=https://play.google.com/store/apps/details?id=com.alquranindonesiaterlengkap${encodeURIComponent(doa)-https://play.google.com/store/apps/details?id=com.alquranindonesiaterlengkap}`;
+    const whatsappUrl = `https://wa.me/?text=https://play.google.com/store/apps/details?id=com.alquranindonesiaterlengkap${encodeURIComponent(doa)}`;
     window.open(whatsappUrl, '_blank');
 }
 
